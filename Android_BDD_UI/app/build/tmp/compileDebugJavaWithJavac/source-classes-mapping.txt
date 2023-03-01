@@ -1,12 +1,12 @@
-com/example/bdd/LoginActivity.java
- com.example.bdd.LoginActivity
- com.example.bdd.LoginActivity$1
+com/example/bdd/ThirdPageActivity.java
+ com.example.bdd.ThirdPageActivity
 com/example/bdd/CustomProgressDialog.java
  com.example.bdd.CustomProgressDialog
+com/example/bdd/BuildConfig.java
+ com.example.bdd.BuildConfig
 com/example/bdd/SecondActivity.java
  com.example.bdd.SecondActivity
  com.example.bdd.SecondActivity$1
-com/example/bdd/BuildConfig.java
- com.example.bdd.BuildConfig
-com/example/bdd/ThirdPageActivity.java
- com.example.bdd.ThirdPageActivity
+com/example/bdd/LoginActivity.java
+ com.example.bdd.LoginActivity
+ com.example.bdd.LoginActivity$1

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -29,9 +30,16 @@ public class LoginActivity extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if(etUserName.getText().toString().equals("admin") && etPwd.getText().toString().equals("12345"))
+                {
+                    //correct
+                    Intent intentObject = new Intent(LoginActivity.this, SecondActivity.class);
+                    startActivity(intentObject);
+                }
+                else
+                    //incorrect
+                    Toast.makeText(LoginActivity.this,"LOGIN FAILED !!!",Toast.LENGTH_SHORT).show();
 
-                Intent intentObject = new Intent(LoginActivity.this, SecondActivity.class);
-                startActivity(intentObject);
             }
         });
     }
