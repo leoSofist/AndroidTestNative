@@ -11,9 +11,11 @@ import androidx.test.rule.ActivityTestRule;
 import com.example.bdd.LoginActivity;
 import com.example.bdd.R;
 
+import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -35,6 +37,8 @@ import static androidx.test.espresso.web.webdriver.DriverAtoms.findElement;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.webClick;
 import static androidx.test.espresso.web.webdriver.DriverAtoms.webKeys;
 import static org.junit.Assert.assertNotNull;
+
+import javax.xml.xpath.XPath;
 
 @SmallTest
 @RunWith(AndroidJUnit4ClassRunner.class)
@@ -85,37 +89,19 @@ public class MainActivityTest {
 
     @Then("^I should see on next activity")
     public void I_should_see_on_next_activity() {
-        String xPath="/html/body/div[1]/main/div/div[2]/div/button";
+
         SystemClock.sleep(3000);
         onView(withId(R.id.txtview_SecondBtn)).perform(click());
         onView(withText("Third Page: Webview Auto UI Testing")).check(matches(isDisplayed()));
         SystemClock.sleep(3000);
+    }
+
+
+    @And("^I should be connected to the Yummly website$")
+    public void iShouldBeConnectedToTheYummlyWebsite() {
+
         onWebView(withId(R.id.webview1)).forceJavascriptEnabled();
         SystemClock.sleep(3000);
 
-//        onWebView().withElement(findElement(Locator.XPATH, xPath)).perform(webClick());
-//        onWebView().withElement(findElement(Locator.ID, "OK")).perform(webClick()).reset();
-//        onWebView().withElement(findElement(Locator.XPATH, "Sign in")).perform(webClick()).reset();
-//
-//        onWebView().withElement(findElement(Locator.ID,"username")).perform(webKeys("Covid2021")); // working fine.
-//        SystemClock.sleep(1000);
-//        onWebView().withElement(findElement(Locator.ID,"password")).perform(webKeys("123456")); // working fine.
-//        SystemClock.sleep(1000);
-//        onWebView().withElement(findElement(Locator.ID,"Login")).perform(webClick()); // button not working properly..
-//        SystemClock.sleep(500);
-//
-//        //onWebView().withElement(findElement(Locator.ID,"//*[@id=\"gb\"]/div/div[2]/a")).perform(webClick());
-//        //onWebView().withElement(findElement(Locator.XPATH,"/html/body/div[1]/div[1]/div/div/div[2]/div[3]/form/div[3]/input")).perform(webClick()).reset();
-//
-//       /* Web.onWebView(ViewMatchers.withId(R.id.webview1))
-//                .withElement(DriverAtoms.findElement(Locator.XPATH, xPath))
-//                .withNoTimeout()
-//                .check(WebViewAssertions.webMatches(DriverAtoms.getText(),
-//                        Matchers.equalTo("Sign in")));*/
-//       /* onWebView().withElement(findElement(Locator.ID, "Sign in")).perform(webClick());*/
-//        //onWebView().withElement(findElement(Locator.ID,"Sign in")).perform(DriverAtoms.webClick());
-//        //onWebView().withElement(findElement(Locator.ID,"ALL")).perform(webClick()).reset();
-//        /*onWebView().withElement(findElement(Locator.ID, "Ok")).perform(webClick()).check(webMatches(getText(), containsString("Ok")));*/
-//        SystemClock.sleep(3000);
     }
 }
