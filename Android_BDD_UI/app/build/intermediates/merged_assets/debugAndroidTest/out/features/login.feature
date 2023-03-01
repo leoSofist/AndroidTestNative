@@ -10,5 +10,5 @@ Feature: Login
     Then I should see on next activity
 
     Examples:
-      | username | password    |
-      | covid19  | 123456789 |
+      | username | password  |
+      | test1    | 123456789 |

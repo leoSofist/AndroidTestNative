@@ -20,8 +20,8 @@ public class ThirdPageActivity extends AppCompatActivity {
 
         webview = findViewById(R.id.webview1);
 
-        //webview.loadUrl("https://www.google.com"); //Sign in - button
-          webview.loadUrl("https://login.salesforce.com/?locale=eu"); // working fine
+        webview.loadUrl("https://www.google.com");
+//          webview.loadUrl("https://login.salesforce.com/?locale=eu"); // working fine
         //webview.loadUrl("https://test.salesforce.com/");
         //https://stackoverflow.com/questions/29144310/match-a-view-in-webview-from-espresso-in-android
     }
