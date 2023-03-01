@@ -3,33 +3,33 @@
 3    package="com.example.bdd.test" >
 4
 5    <uses-sdk
-5-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:5:5-74
+5-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:5:5-74
 6        android:minSdkVersion="23"
-6-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:5:15-41
+6-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:5:15-41
 7        android:targetSdkVersion="32" />
-7-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:5:42-71
+7-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:5:42-71
 8
 9    <instrumentation
-9-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:11:5-15:65
+9-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:11:5-15:65
 10        android:name="com.example.bdd.test.Instrumentation"
-10-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:11:22-73
+10-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:11:22-73
 11        android:functionalTest="false"
-11-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:14:22-52
+11-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:14:22-52
 12        android:handleProfiling="false"
-12-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:13:22-53
+12-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:13:22-53
 13        android:label="Tests for com.example.bdd"
-13-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:15:22-63
+13-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:15:22-63
 14        android:targetPackage="com.example.bdd" />
-14-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:12:22-61
+14-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:12:22-61
 15
 16    <application
-16-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:7:5-9:19
+16-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:7:5-9:19
 17        android:debuggable="true"
-17-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:7:18-43
+17-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:7:18-43
 18        android:extractNativeLibs="false" >
 19        <uses-library android:name="android.test.runner" />
-19-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:8:9-60
-19-->/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger10147990553321192765.xml:8:23-57
+19-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:8:9-60
+19-->/Users/leonardo.almeida/Documents/repo-SofistAndroid/repo/AndroidTestNative/Android_BDD_UI/app/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7214661069222608687.xml:8:23-57
 20    </application>
 21
 22</manifest>
