@@ -3,7 +3,7 @@ package com.example.bdd.test;
 import android.content.Intent;
 import android.os.SystemClock;
 
-import androidx.test.espresso.web.webdriver.Locator;
+
 import androidx.test.filters.SmallTest;
 import androidx.test.internal.runner.junit4.AndroidJUnit4ClassRunner;
 import androidx.test.rule.ActivityTestRule;
@@ -15,7 +15,6 @@ import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.runner.RunWith;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -29,17 +28,18 @@ import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
 import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
+import static androidx.test.espresso.matcher.RootMatchers.withDecorView;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static androidx.test.espresso.web.assertion.WebViewAssertions.webMatches;
 import static androidx.test.espresso.web.sugar.Web.onWebView;
-import static androidx.test.espresso.web.webdriver.DriverAtoms.findElement;
-import static androidx.test.espresso.web.webdriver.DriverAtoms.webClick;
-import static androidx.test.espresso.web.webdriver.DriverAtoms.webKeys;
+
+import static junit.framework.TestCase.assertEquals;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertNotNull;
 
-import javax.xml.xpath.XPath;
+
 
 @SmallTest
 @RunWith(AndroidJUnit4ClassRunner.class)
@@ -50,6 +50,8 @@ public class MainActivityTest {
 
     @Rule
     private LoginActivity activity;
+
+    private String toastText = "";
 
 
     @Before("@login-feature")
@@ -123,9 +125,5 @@ public class MainActivityTest {
           onView(withText("Third Page: Webview Auto UI Testing")).check(doesNotExist());
     }
 
-    @And("^I should see the login failed error message$")
-    public void iShouldSeeTheLoginFailedErrorMessage() {
 
-        Assert.assertTrue(true);
-    }
 }
