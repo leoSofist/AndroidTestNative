@@ -1,0 +1,6 @@
+com/example/bdd/test/Instrumentation.java
+ com.example.bdd.test.Instrumentation
+com/example/bdd/test/BuildConfig.java
+ com.example.bdd.test.BuildConfig
+com/example/bdd/test/MainActivityTest.java
+ com.example.bdd.test.MainActivityTest

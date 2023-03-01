@@ -1,0 +1,7 @@
+#Wed Mar 01 09:34:41 BRT 2023
+base.1=/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/classes.dex
+path.1=classes.dex
+base.0=/Users/leonardo.almeida/Documents/Documentos - sofist-676/repo/Testing/Android_BDD_UI/app/build/intermediates/dex/debugAndroidTest/mergeExtDexDebugAndroidTest/classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex
