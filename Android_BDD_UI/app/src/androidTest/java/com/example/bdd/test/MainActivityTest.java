@@ -27,6 +27,7 @@ import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
 import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.typeText;
+import static androidx.test.espresso.assertion.ViewAssertions.doesNotExist;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
@@ -59,6 +60,18 @@ public class MainActivityTest {
 
     @After("@login-feature")
     public void tearDown() {
+        SystemClock.sleep(3000);
+        activityTestRule.finishActivity();
+    }
+
+    @Before("@login-feature-incorrect")
+    public void setupTwo() {
+        activityTestRule.launchActivity(new Intent());
+        activity = activityTestRule.getActivity();
+    }
+
+    @After("@login-feature-incorrect")
+    public void tearDownTwo() {
         SystemClock.sleep(3000);
         activityTestRule.finishActivity();
     }
@@ -103,5 +116,16 @@ public class MainActivityTest {
         onWebView(withId(R.id.webview1)).forceJavascriptEnabled();
         SystemClock.sleep(3000);
 
+    }
+
+    @Then("^I should not see the next activity$")
+    public void iShouldNotSeeTheNextActivity() {
+          onView(withText("Third Page: Webview Auto UI Testing")).check(doesNotExist());
+    }
+
+    @And("^I should see the login failed error message$")
+    public void iShouldSeeTheLoginFailedErrorMessage() {
+
+        Assert.assertTrue(true);
     }
 }

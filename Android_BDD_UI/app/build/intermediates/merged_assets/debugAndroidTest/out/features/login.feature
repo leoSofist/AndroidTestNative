@@ -2,19 +2,20 @@ Feature: Login
   Perform login on username and password are inputted
 
   @login-feature
-  Scenario Outline: Input username and password, login and search on Google
+  Scenario Outline: Input username and password, login sucess and search on Google
     Given I have a login activity
-    When I input username "<username>"
-    And I input password "<password>"
+    When I input username <username>
+    And I input password <password>
     And I press submit button
     Then I should see on next activity
     And I should be connected to the Yummly website
 
     Examples:
-      | username | password  |
-      | test1    | 123456789 |
-#      | test2    | 987654321 |
-#      | test3    | qwerty123 |
+      | username | password |
+      | admin    | 12345    |
+
+
+
 
 
 
