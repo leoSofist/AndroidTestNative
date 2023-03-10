@@ -19,9 +19,6 @@ jobs:
       with:
         java-version: 1.8   
 
-    - name: Change directory to android/
-      run: cd Android_BDD_UI/
-
     - name: Build with Gradle
       run: ./gradlew assembleDebug
 
