@@ -20,10 +20,10 @@ jobs:
         java-version: 1.8   
 
     - name: Build with Gradle
-      run: ./gradlew assembleDebug
+      run: Android_BDD_UI/gradlew assembleDebug
 
     - name: Run tests
-      run: ./gradlew testDebug
+      run: Android_BDD_UI/gradlew testDebug
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
