@@ -24,7 +24,7 @@ jobs:
       run: cd Android_BDD_UI/
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew
+      run: chmod +x gradlew.bat
     - name: Build with Gradle
       run: ./gradlew assembleDebug
 
